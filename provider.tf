@@ -5,6 +5,7 @@ terraform {
       version = "3.106.1"
       configuration_aliases = [
         azurerm.connectivity,
+        azurerm.management,
       ]
     }
   }
@@ -25,3 +26,8 @@ features {}
   subscription_id = "13ba43d9-3859-4c70-9f8d-182debaa038b"
 }
 
+provider "azurerm" {
+  alias = "management"
+features {}
+  subscription_id = "a38e4e42-6b94-4849-9d8a-642254d38c49"
+}
