@@ -5,7 +5,7 @@ resource "azurerm_resource_group" "name" {
 }
 
 resource "azurerm_resource_group" "name1" {
-    provider = azurerm.connectivity
+    provider = azurerm.management
   name = "tg1"
   location = "East US"
 }
